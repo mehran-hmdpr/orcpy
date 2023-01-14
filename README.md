@@ -87,6 +87,6 @@ Contact us by email for further information or questions about **orcpy**, or sug
 
 ## License
 
-See the [LICENSE](LICENSE.rst) file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/mehran-hmdpr/orcpy/blob/main/LICENSE) file for license rights and limitations (MIT).
 
    
