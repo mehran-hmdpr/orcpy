@@ -73,7 +73,7 @@ To uninstall the package:
 To use orcpy after installation of requierd packages just type:
   ```bash
 > from orcpy import design
-  design.ORC.cycle("all")
+  Results, figure = design.ORC.cycle("all")
 ```
 Next, the orcpy will ask you input variables. instead of `"all"` you can also input a list of working fluids you want to analyze.  
   
