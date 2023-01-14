@@ -1,3 +1,7 @@
+<div align="center"> <img src="https://raw.githubusercontent.com/mehran-hmdpr/orcpy/main/orcpy.png" width="350" height="300" >
+
+<div align="left">
+
 # orcpy
 **orcpy**: A lightweight Python module that applies thermodynamic principles, analysing a given set of heat source and heat sink data to find the optimum design parameters of an organic Rankine cycle for waste heat recovery projects.
 
@@ -71,7 +75,7 @@ To use orcpy after installation of requierd packages just type:
 > from orcpy import design
   design.ORC.cycle("all")
 ```
-Then the orcpy will ask you to input variables. instead of `"all"` you can also type the name of the working fluids you want to analyze as a list.  
+Next, the orcpy will ask you input variables. instead of `"all"` you can also input a list of working fluids you want to analyze.  
   
 ## Authors and contributors
 **orcpy** is developed and mantained by
