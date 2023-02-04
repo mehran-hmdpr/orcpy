@@ -50,7 +50,7 @@ After defining it, we want of course to solve such a problem. To this aim, the o
 - The inlet temperature for the waste stream (ºC)
 - The outlet temperature for the waste stream (ºC)
 - The power of the waste stream (kW)
-- The heat capacity of the waste stream (kW / ºC)
+- The heat capacity of the waste stream (kW / kgºC)
 - The minimum temperature of the condenser (ºC)
 - The minimum temperature difference (ºC)
 - Isentropic efficiencies of turbine and pump (%)
