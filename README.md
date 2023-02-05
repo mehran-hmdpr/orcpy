@@ -47,12 +47,12 @@ First step is formalization of the problem in the **orcpy** framework. The optim
   
 After defining it, we want of course to solve such a problem. To this aim, the orcpy package uses a golden section search approach to find the optimum pressure level between the upper (*0.85 P<sub>critical<sub>*) and the lower (*P<sub>condenser<sub>*) boundaries. The input variables that should be given to the orcpy are as follow:
   
-- The inlet temperature for the waste stream (ºC)
-- The outlet temperature for the waste stream (ºC)
-- The power of the waste stream (kW)
-- The heat capacity of the waste stream (kW / kgºC)
-- The minimum temperature of the condenser (ºC)
-- The minimum temperature difference (ºC)
+- The inlet temperature for the waste stream (ºC) <sub>for ORC systems it is usually less than 400<sub>
+- The outlet temperature for the waste stream (ºC) <sub>for flue gas it is usually more than 70<sub>
+- The power of the waste stream (kW) 
+- The heat capacity of the waste stream (kJ / kgºC) <sub>for water it is 4.186 and for air (flue gas) it is about 1<sub>
+- The minimum temperature of the condenser (ºC) <sub>for ORC systems it is usually more than 40<sub>
+- The minimum temperature difference (ºC) <sub>10 is a typical value for this parameter<sub>
 - Isentropic efficiencies of turbine and pump (%)
 
   knowing these parameter, orcpy will give you optimum design parameters of the ORC system.
@@ -75,8 +75,21 @@ To use orcpy after installation of requierd packages just type:
 > from orcpy import design
   Results, figure = design.ORC.cycle("all")
 ```
-Next, the orcpy will ask you input variables. instead of `"all"` you can also input a list of working fluids you want to analyze.  
-  
+Next, the orcpy will ask you input variables. instead of `"all"` you can input a list of working fluids you want to analyze.
+You can also use orcpy as a function:
+  ```bash
+> from orcpy import design
+  Results, figure = design.ORC.model (400, 100,40, 4, 90, 90, 10, 40, "all")
+     #model (inlet temperature,
+             #minimum allowable temperature,
+             #Power of waste strean,
+             #Heat capacity of waste stream,
+             #turbine efficiency,
+             #pump efficiency,
+             #minimum temperature difference in heat exchangers,
+             #minimum condenser temperature,
+             #list of working fluids)
+```
 ## Authors and contributors
 **orcpy** is developed and mantained by
 * [Mehran Ahmadpour](mailto:mehran.hmdpr@gmail.com)
