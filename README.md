@@ -78,17 +78,28 @@ To use orcpy after installation of requierd packages just type:
 Next, the orcpy will ask you input variables. instead of `"all"` you can input a list of working fluids you want to analyze.
 You can also use orcpy as a function:
   ```bash
-> from orcpy import design
-  Results, figure = design.ORC.model (400, 100,40, 4, 90, 90, 10, 40, "all")
-     #model (inlet temperature,
-             #minimum allowable temperature,
-             #Power of waste strean,
-             #Heat capacity of waste stream,
-             #turbine efficiency,
-             #pump efficiency,
-             #minimum temperature difference in heat exchangers,
-             #minimum condenser temperature,
-             #list of working fluids)
+>
+!pip install orcpy
+from orcpy import design
+
+waste_heat_temperature = 300 #C
+minimum_allowable_temperature = 100 #C
+waste_stream_power = 40 #kW
+waste_heat_capacity = 4 #kJ/kg k
+turbine_efficiency = 90 #%
+pump_efficiency = 90 #%
+minimum_temperature_difference = 10 #C
+minimum_condenser_temperature = 40 #C
+
+opt, fig = design.ORC.model(waste_heat_temperature,
+                             minimum_allowable_temperature,
+                             waste_stream_power,
+                             waste_heat_capacity,
+                             turbine_efficiency,
+                             pump_efficiency,
+                             minimum_temperature_difference,
+                             minimum_condenser_temperature
+                             ,"all")
 ```
 ## Authors and contributors
 **orcpy** is developed and mantained by
