@@ -101,6 +101,12 @@ opt, fig = design.ORC.model(waste_heat_temperature,
                              minimum_condenser_temperature
                              ,"all")
 ```
+
+<div align="center"> <img src="https://raw.githubusercontent.com/mehran-hmdpr/orcpy/main/orcpy.png" width="350" height="300" >
+
+<div align="left">
+
+
 ## Authors and contributors
 **orcpy** is developed and mantained by
 * [Mehran Ahmadpour](mailto:mehran.hmdpr@gmail.com)
