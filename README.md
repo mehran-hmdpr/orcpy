@@ -110,6 +110,8 @@ opt, fig = design.ORC.model(waste_heat_temperature,
 under the supervision of Prof. Ramin Roshandel and Prof. Mohammad B. Shafii
 
 Contact us by email for further information or questions about **orcpy**, or suggest pull requests. Contributions improving either the code or the documentation are welcome!
+You can find out more about my projects by visiting my [website](https://mehranahmadpour.mozellosite.com/).
+    
 
 ## License
 
