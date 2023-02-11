@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "orcpy"
+version = "0.1.2"
+description = "A python package for designing organic Rankine cycles"
+authors = ["Mehran Ahmadpour <mehran.hmdpr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.2"
+coolprop = "^6.4.3.post1"
+pandas = "^1.5.3"
+pina = "^0.1.1"
+plotly = "^5.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
